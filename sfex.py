@@ -58,13 +58,15 @@ def get_download_images(download_images_str, last_image):
 
 def print_usage():
     print('Usage:')
-    print('python sfex.py [options]')
+    print('python sfex.py [options]\t# 使用源码')
     print('or')
-    print('sfex.exe [options]\n')
+    print('sfex.exe [options]\t\t# 使用可执行文件\n')
     print('Options:')
     print('-h,--help\tShow help.')
-    print('-u,--url\t待下载网址.')
+    print('-u\t\t待下载网址.')
     print('-p\t\t待下载页码（默认全部下载，可选1-20,22）.')
+    print('-c\t\t设置cookie.')
+    print('--proxy\t\thttps设置代理.')
     print('-t\t\t是否使用日语标题（默认是，使用该选项则使用英语标题）.')
     print('-o\t\t是否下载原图（默认是，使用该选项则为否）.')
     print('-r\t\t下载文件位置（默认当前文件夹）.')
